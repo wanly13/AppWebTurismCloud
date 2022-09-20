@@ -1,0 +1,65 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><image 
+            width="450" 
+            height="300" 
+            xlink:href="https://elperuano.pe/fotografia/thumbnail/2020/06/19/000081776M.jpg" 
+          /></svg>
+
+          <div class="card-body" *ngIf="places">
+            <p class="card-text">{{places[0].nombre}}</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm"><a [routerLink]="['/P2/vistas/', places[0].id]" class="btn btn-primary">
+                  Conoce el lugar 
+                </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><image 
+            width="370" 
+            height="280" 
+            xlink:href="https://upload.wikimedia.org/wikipedia/commons/2/24/Aves_marinas_Islas_Palomino.jpg" 
+          /></svg>
+          <div class="card-body" *ngIf="places">
+            <p class="card-text">{{places[1].nombre}}</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm"><a [routerLink]="['/P2/vistas/', places[1].id]" class="btn btn-primary">
+                  Conoce el lugar 
+                </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><image 
+            width="500" 
+            height="235" 
+            xlink:href="https://www.museosdelima.com/wp-content/uploads/2018/01/plaza-mayor-lima-3.jpg" 
+          /></svg>
+          <div class="card-body" *ngIf="places">
+            <p class="card-text">{{places[2].nombre}}</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm"><a [routerLink]="['/P2/vistas/', places[2].id]" class="btn btn-primary">
+                  Conoce el lugar 
+                </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>
