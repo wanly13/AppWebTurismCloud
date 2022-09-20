@@ -11,7 +11,7 @@ app.use(express.json());
 app.get('/comments/:lugar_id',function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -33,7 +33,7 @@ app.get('/comments/:lugar_id',function(req,res){
 app.get('/questions/:trivia_id',function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -53,7 +53,7 @@ app.get('/questions/:trivia_id',function(req,res){
 app.post('/comments', function(req, res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });   
@@ -72,7 +72,7 @@ app.post('/comments', function(req, res){
 app.delete('/comments/:id',function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -91,7 +91,7 @@ app.delete('/comments/:id',function(req,res){
 app.get('/places', function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -107,7 +107,7 @@ app.get('/places', function(req,res){
 app.get('/places/:id',function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -127,7 +127,7 @@ app.get('/places/:id',function(req,res){
 app.get('/answers/:pregunta_id', function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
@@ -146,7 +146,7 @@ app.get('/answers/:pregunta_id', function(req,res){
 app.get('/trivias/:lugar_id', function(req,res){
     var connection=mysql.createConnection({
         host: "localhost",
-        user: 'utec',
+        user: 'wanly',
         password: '1234567890',
         database: 'limaturismo'
     });
